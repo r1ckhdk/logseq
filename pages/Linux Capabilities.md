@@ -1,0 +1,37 @@
+tags:: [[Linux]]
+
+- As **Capabilities** quebram o poder total do `root` em pequenos "pedaços" de privilégios independentes. Isso permite que você dê a um programa apenas o poder de que ele precisa, e nada mais (**Princípio do Menor Privilégio**).
+- Tradicionalmente, o kernel divide os processos em duas categorias:
+	- Privilegiados (User ID 0): Via usuário root ou sudo, ignora todas as checagens de permissão
+	- Não privilegiados (User ID Non 0): Usuários comuns que devem obedecer às permissões de leitura, escrita e/ou execução
+- Dessa forma, as capabilities substituem o modelo de segurança "tudo ou nada" ao utilizar root/sudo.
+-
+- ## File Capabilities
+- Diferente das capacidades de um processo em execução, as *File Capabilities* são armazenadas nos **atributos estendidos** do sistema de arquivos. Quando o arquivo é executado, o processo "herda" esses poderes.
+-
+- ### Comandos Essenciais
+- Definir uma capacidade: `setcap <capability>=<flags> <arquivo>`
+- Verificar capacidades: `getcap <arquivo>`
+- Remover capacidades: `setcap -r <arquivo>`
+-
+- > O comando `setcap` não é cumulativo por padrão, ou seja, ele **sobrescreve** completamente os atributos anteriores do arquivo. Se precisar de mais de uma capacidade, deve passar todas no comando.
+-
+- ### Flags
+- `e`  **Effective**  A capacidade está "ligada" e ativa para uso imediato.
+- `p`  **Permitted**  O processo tem permissão para usar essa capacidade (pode ativá-la ou desativá-la).
+- `i`  **Inheritable**  Permite que o processo passe essa capacidade para seus processos filhos.
+-
+- > DAC significa **discretionary access control**
+-
+- ### Principais capabilities
+- `cap_dac_read_search` -> ignora checagens de permissão de leitura e de entrada em arquivos
+	- Utilizado no binário do [[Restic]] para conseguir escanear e gerar snapshots de qualquer lugar no sistema
+		- `sudo setcap cap_dac_read_search=+ep ~/bin/restic-0.18.1`
+-
+- `cap_dac_override` -> ignora todas as checagens de permissão (rwx)
+- `cap_chown` -> permite alterar o owner dos arquivos (UID e GID)
+- `cap_fowner`->  permite setar ACLs (entre outras)
+-
+-
+- #references
+	- https://www.man7.org/linux/man-pages/man7/capabilities.7.html

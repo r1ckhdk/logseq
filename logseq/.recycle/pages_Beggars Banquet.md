@@ -1,0 +1,5 @@
+- #artist [[The Rolling Stones]]
+- #url https://rateyourmusic.com/release/album/the-rolling-stones/beggars-banquet/
+- #year 1968
+- #genre [[Rock]]
+-

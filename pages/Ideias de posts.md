@@ -1,0 +1,7 @@
+- Listar ideias de posts para o meu blog [[DoItYourBlog]]
+-
+- [[Capa do álbum Los Crudos]]
+	- É capa do livro **Mexico Through Foreign Eyes**
+		- Compilação de textos e fotos de mais de 50 fotógrafos
+		- A foto da capa foi tirada pela fotógrafa suíça [Gertrude Blom](https://en.wikipedia.org/wiki/Gertrude_Blom)
+		-

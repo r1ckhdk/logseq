@@ -1,0 +1,16 @@
+- É capa do livro **Mexico Through Foreign Eyes**
+	- Compilação de textos e fotos de mais de 50 fotógrafos
+	- A foto da capa foi tirada pela fotógrafa suíça [Gertrude Blom](https://en.wikipedia.org/wiki/Gertrude_Blom)
+		- Foto tirada em **1974**, onde o homem na frente é **Santiago**, um oficial religioso dos [Tzotzil](https://en.wikipedia.org/wiki/Tzotzil)
+		-
+-
+-
+- Leitura complementar
+	- [Remezcla - Martin Sorrondeguy Interview](https://remezcla.com/features/music/los-crudos-martin-sorrondeguy-desafinados-interview/)
+	- [New York Times - Gertrude Blom's Maya](https://www.nytimes.com/1984/03/25/magazine/gertrude-bloms-maya.html)
+	- [Reddit - /r/hardcore - Los Crudos Discog album cover](https://www.reddit.com/r/Hardcore/comments/1b1fir4/los_crudos_discog_album_cover/)
+	- [YouTube - Beyond the Screams: A US Latino Hardcore Punk Documentary](https://www.youtube.com/watch?v=KNZ9iw8U_W0)
+	- [YouTube - Martin Sorrondeguy (Los Crudos) Interview 2002](https://www.youtube.com/watch?v=QZbyw10YOSg)
+	-
+	-
+	-
